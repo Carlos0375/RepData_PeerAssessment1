@@ -58,7 +58,7 @@ merge() function. The attribute to match was labeled "by=Id".
 
 ### Assignment 4
 The brakets in the attribute names were removed by using the function gsub().
-The special characters like "-" where replaced by using the function 
+The special characters like "-" where replaced by "." using the function 
 make.names().
 
 ### Assignment 5
