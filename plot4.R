@@ -1,6 +1,13 @@
 ################## PLOT 4###################
 # Please note that since I come from germany
-# the daynames are printed out in german 
+# the daynames are printed out in german
+# Please also note that the background of
+# the plot is set to white (not to transparent)
+# as shown in the files of the repository.
+# This decision was made for better viewability of 
+# the plot.
+# The background can be changed by adding
+# the argument bg = "transparent" to the plot function
 
 # Set the path to the working directory and load data
 path <- getwd()
@@ -56,7 +63,7 @@ with(data_subset, {
 })
 
 # Create combined Plots - png
-png(file="plot4.png",width = 480, height = 480, bg = "transparent")
+png(file="plot4.png",width = 480, height = 480)
 with(data_subset, {
         par(mfrow=c(2,2), mar=c(4,4,4,2))
         plot(datetime,Global_active_power, type="l",

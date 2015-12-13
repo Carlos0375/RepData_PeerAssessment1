@@ -1,6 +1,13 @@
 ################## PLOT 2 ###################
 # Please note that since I come from germany
 # the daynames are printed out in german 
+# Please also note that the background of
+# the plot is set to white (not to transparent)
+# as shown in the files of the repository.
+# This decision was made for better viewability of 
+# the plot.
+# The background can be changed by adding
+# the argument bg = "transparent" to the plot function
 
 # Set the path to the working directory and load data
 path <- getwd()
@@ -32,7 +39,7 @@ with(data_subset, plot(datetime,Global_active_power, type="l",
                        ylab="Global Active Power (kilowatts)"))
 
 # Create Lineplot 2 - png
-png(file="plot2.png",width = 480, height = 480, bg = "transparent")
+png(file="plot2.png",width = 480, height = 480)
 par(mar=c(3,4,4,2))
 with(data_subset, plot(datetime,Global_active_power, type="l",
                        ylab="Global Active Power (kilowatts)"))

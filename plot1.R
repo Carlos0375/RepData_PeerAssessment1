@@ -1,4 +1,11 @@
 ################## PLOT 1 ###################
+# Please note that the background of
+# the plot is set to white (not to transparent)
+# as shown in the files of the repository.
+# This decision was made for better viewability of 
+# the plot.
+# The background can be changed by adding
+# the argument bg = "transparent" to the plot function
 
 # Set the path to the working directory and load data
 path <- getwd()
@@ -28,7 +35,7 @@ hist(data_subset$Global_active_power, col="red",
      xlab="Global Active Power (kilowatts)", main="Global Active Power")
 
 # Create Histogram Plot 1 - png
-png(file="plot1.png",width = 480, height = 480, bg = "transparent")
+png(file="plot1.png",width = 480, height = 480)
 hist(data_subset$Global_active_power, col="red", 
      xlab="Global Active Power (kilowatts)", main="Global Active Power")
 dev.off()
