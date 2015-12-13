@@ -1,7 +1,5 @@
 ################## PLOT 3 ###################
-# Please note that since I come from germany
-# the daynames are printed out in german 
-# Please also note that the background of
+# Please note that the background of
 # the plot is set to white (not to transparent)
 # as shown in the files of the repository.
 # This decision was made for better viewability of 
